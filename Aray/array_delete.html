@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Element From The Array</title>
+    <style>
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Delete The Element From The Array</h2>
+  </body>
+
+  <script>
+    function removeEl() {
+      let data = [20, 30, 10, 55, 45, 77, 8, 4, 2];
+      let position = document.getElementById('position').value;
+      position = parseInt(position);
+
+      for (let i = position; i <= data.length - 1; i++) {
+        data[i] = data[i + 1];
+      }
+
+      data.length = data.length - 1;
+      console.log(data);
+    }
+  </script>
+
+  <input
+    type="text"
+    id="position"
+    placeholder="Enter the position of the element..."
+  />
+  <button onclick="removeEl()">Submit</button>
+</html>

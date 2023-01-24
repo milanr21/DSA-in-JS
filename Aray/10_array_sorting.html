@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting an Array using bubble sort</title>
+  </head>
+  <body>
+    <h2>Sorting and Array using Bubble Sort</h2>
+
+    <script>
+      let arr = [50, 12, 65, 11, 7, 2, 80, 12, 31, 55, 40, 20];
+
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+          if (arr[j] > arr[j + 1]) {
+            let temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+          }
+        }
+        console.warn(arr);
+        console.log(`${i}th pass`);
+      }
+    </script>
+  </body>
+</html>

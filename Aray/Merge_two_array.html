@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Merge the Element</h2>
+
+    <script>
+      //   let data1 = [1, 2, 3, 4, 5, 6, 7];
+      //   console.warn(data1.length);
+      //   console.warn('------');
+      //   let data3 = [];
+      //   let data2 = [8, 9, 10, 11, 12, 13];
+
+      //   for (let i = 0; i < data1.length; i++) {
+      //     data3[i] = data1[i];
+      //   }
+
+      //   for (i = 0; i < data2.length; i++) {
+      //     console.warn(data1.length + i);
+      //     data3[data1.length + i] = data2[i];
+      //   }
+
+      //   console.warn(data3);
+
+      let data1 = [6, 5, 10, 40, 52, 14, 99];
+      let data2 = [];
+      let data3 = [9, 10, 11, 12, 13];
+
+      for (let i = 0; i < data1.length; i++) {
+        data2[i] = data1[i];
+      }
+      console.log(data2);
+
+      for (let i = 0; i < data3.length; i++) {
+        data2[data1.length + i] = data3[i];
+      }
+
+      console.log(data2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Traversing</title>
+
+    <script>
+      let data = [9, 45, 2, 8, 45, 23, 7, 78, 0, 11, 41, 77];
+
+      //Traversing
+      //   for (let i = 0; i < data.length; i++) {
+      //     console.log(data[i]);
+      //     document.write(`Array ${i} is ${data[i]} <br>`);
+      //   }
+
+      // Accessing
+      //   let x = 10;
+      //   document.write(data[5]);
+
+      function getElement() {
+        let el = document.getElementById('element').value;
+        if (el < data.length && typeof parseInt(el) === 'number') {
+          console.log(data[el]);
+        } else if (el < 0) {
+          console.log(data[data.length + el]);
+        } else {
+          console.log('Please Enter the valid input');
+        }
+
+        console.log(el);
+      }
+
+      //   el = -14;
+      //   if (el > -13) {
+      //     let data1 = data.length + el;
+      //     console.log(data[data1]);
+      //   } else {
+      //     alert('Enter correct value');
+      //   }
+    </script>
+  </head>
+  <body>
+    <h1>Array Traversing</h1>
+
+    <input type="text" id="element" />
+    <button onClick="getElement()">Get Element</button>
+  </body>
+</html>
